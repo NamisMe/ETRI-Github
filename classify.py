@@ -84,7 +84,7 @@ if __name__ == "__main__":
         #path, metadata 정의
         base_path, sample2detect = file_load(folder_num)
         folders = os.listdir(base_path)
-        for folder in folders[:10]:
+        for folder in folders:
             e_folder = os.path.join(base_path, folder)
             json_files = glob.glob(e_folder+'/*.json')
             print(folder)
